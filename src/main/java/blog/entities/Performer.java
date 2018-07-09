@@ -4,7 +4,7 @@ package blog.entities;
 import javax.persistence.*;
 import java.util.Set;
 @Entity
-@Table(name = "performer")
+@Table(name = "performers")
 public class Performer {
     private Integer id;
     private String name;
@@ -42,13 +42,12 @@ public class Performer {
     public void setBio(String bio) {
         this.bio = bio;
     }
-//    @OneToMany(mappedBy = "performers")
+    @OneToMany(mappedBy = "performer")
+    public Set<Event> getEvents() {
+        return events;
+    }
 
-//    public Set<Event> getEvents() {
-//        return events;
-//    }
-//
-//    public void setEvents(Set<Event> events) {
-//        this.events = events;
-//    }
+    public void setEvents(Set<Event> events) {
+        this.events = events;
+    }
 }
