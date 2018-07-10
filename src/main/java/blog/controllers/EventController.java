@@ -25,6 +25,8 @@ public class EventController {
 
     @GetMapping("/showEvents")
     public String displayEvents(Model model) {
+        List<Event> events = this.eventRepository.findAll();
+        model.addAttribute("events", events);
         return "Events/eventDisplay";
     }
 }

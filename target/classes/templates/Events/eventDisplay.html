@@ -16,5 +16,42 @@
             <h1 id = "current-title" class = "text-center">Events</h1>
         </div>
     </header>
+
+    <table class="redTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>Place</th>
+                <th>Seats</th>
+            </tr>
+        </thead>
+            <tbody>
+                <th:block th:each="event : ${events}">
+                        <tr>
+                            <td th:text="${event.getDate()}">asd</td>
+                            <td th:text="${event.getCity()}">cell2_1</td>
+                            <td th:text="${event.getPlace()}">cell3_1</td>
+                            <td th:text="${event.getMaxSeats()}">cell4_1</td>
+                        </tr>
+                </th:block>
+                <tr>
+                    <td>cell1_2</td>
+                    <td>cell2_2</td>
+                    <td>cell3_2</td>
+                    <td>cell4_2</td>
+                </tr>
+            </tbody>    
+        </table>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
