@@ -11,6 +11,11 @@
     <script type="text/javascript" th:src="@{/js/npm.js}"></script>
 </head>
 <body>
-    <h1>This will be the homepage.</h1>
+    <header class="panel panel-default custom-banner">
+        <div class="panel-body">
+            <h1 id = "current-title" class = "text-center">This will be the homepage.</h1>
+        </div>
+    </header>
+      <a class="btn btn-success" th:href="@{/showEvents}">Events</a>
 </body>
 </html>

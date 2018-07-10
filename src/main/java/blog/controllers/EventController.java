@@ -4,6 +4,7 @@ import blog.entities.Event;
 import blog.repositories.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
@@ -20,5 +21,10 @@ public class EventController {
     @GetMapping("/")
     public String displayHomePage(){
         return "index";
+    }
+
+    @GetMapping("/showEvents")
+    public String displayEvents(Model model) {
+        return "Events/eventDisplay";
     }
 }
