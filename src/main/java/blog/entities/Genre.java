@@ -1,12 +1,13 @@
 package blog.entities;
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "genres")
 public class Genre {
     private Integer id;
     private String genreName;
-
+    private Set<Performer> performers;
     public Genre() {
     }
 
@@ -29,5 +30,14 @@ public class Genre {
 
     public void setGenreName(String genreName) {
         this.genreName = genreName;
+    }
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "genres_performers")
+    public Set<Performer> getPerformers() {
+        return performers;
+    }
+
+    public void setPerformers(Set<Performer> performers) {
+        this.performers = performers;
     }
 }
