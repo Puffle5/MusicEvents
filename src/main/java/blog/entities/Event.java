@@ -69,13 +69,13 @@ public class Event {
         this.bookedSeats = bookedSeats;
     }
 
-//    @ManyToOne()
-//    @JoinColumn(name = "performer_id")
-//    public Performer getPerformer() {
-//        return performer;
-//    }
-//
-//    public void setPerformer(Performer performer) {
-//        this.performer = performer;
-//    }
+    @ManyToOne()
+    @JoinColumn(name = "performerId")
+    public Performer getPerformer() {
+        return performer;
+    }
+
+    public void setPerformer(Performer performer) {
+        this.performer = performer;
+    }
 }

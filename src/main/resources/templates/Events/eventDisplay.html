@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/bootstrap-theme.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/eventDisplay.css}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-3.1.1.js}"></script>
+    <script type="text/javascript" th:src="@{/js/npm.js}"></script>
+</head>
+<body>
+    <header class="panel panel-default custom-banner">
+        <div class="panel-body">
+            <h1 id = "current-title" class = "text-center">Events</h1>
+        </div>
+    </header>
+
+    <table class="redTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>Place</th>
+                <th>Seats</th>
+            </tr>
+        </thead>
+            <tbody>
+                <th:block th:each="event : ${events}">
+                    <tr>
+                        <td th:text="${event.getDate()}">asd</td>
+                        <td th:text="${event.getCity()}">cell2_1</td>
+                        <td th:text="${event.getPlace()}">cell3_1</td>
+                        <td th:text="${event.getMaxSeats()}">cell4_1</td>
+                    </tr>
+                </th:block>
+            </tbody>    
+        </table>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
