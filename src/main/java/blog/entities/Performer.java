@@ -10,7 +10,7 @@ public class Performer {
     private String name;
     private String bio;
     private Set<Event> events;
-
+    private Set<Genre> genres;
     public Performer(String name, String bio) {
         this.name = name;
         this.bio = bio;
@@ -49,5 +49,14 @@ public class Performer {
 
     public void setEvents(Set<Event> events) {
         this.events = events;
+    }
+
+    @ManyToMany(mappedBy = "performers")
+    public Set<Genre> getGenres() {
+        return genres;
+    }
+
+    public void setGenres(Set<Genre> genres) {
+        this.genres = genres;
     }
 }
