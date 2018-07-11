@@ -2,6 +2,7 @@ package blog.entities;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Table(name = "events")
@@ -13,7 +14,7 @@ public class Event {
     private Integer maxSeats;
     private Integer bookedSeats;
     private Performer performer;
-
+    private Set<Reservation> reservations;
 
     public Event() {
     }
@@ -77,5 +78,13 @@ public class Event {
 
     public void setPerformer(Performer performer) {
         this.performer = performer;
+    }
+    @OneToMany(mappedBy = "event")
+    public Set<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(Set<Reservation> reservations) {
+        this.reservations = reservations;
     }
 }

@@ -1,6 +1,4 @@
-
 package blog.entities;
-
 import javax.persistence.*;
 import java.util.Set;
 @Entity

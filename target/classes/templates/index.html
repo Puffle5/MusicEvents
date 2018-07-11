@@ -13,9 +13,55 @@
 <body>
     <header class="panel panel-default custom-banner">
         <div class="panel-body">
-            <h1 id = "current-title" class = "text-center">This will be the homepage.</h1>
+            <h1 id = "current-title" class = "text-center">Lucky Page :)</h1>
         </div>
-    </header>
-      <a class="btn btn-success" th:href="@{/showEvents}">Events</a>
+    </header>       
+    <!-- Page content -->
+   
+
+    
+
+    <div class="main">
+        <table class="chessboard">
+                <tr class="chessboard">
+                    <td class="chessboard">
+                        <img th:src="@{/images/1.png}" alt="Nirvana" height="183" width="500"/>
+                    </td>
+                    <td class="chessboard">
+                        <img th:src="@{/images/2.1.jpg}" alt="Rock Concert" height="183" width="500"/>
+                    </td>
+                    <td class="chessboard">
+                        <a id="genre" class="btn btn-success custom-button" th:href="@{/showEvents}">Genres</a>
+                    </td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="chessboard">
+                        <img th:src="@{/images/2.3.jpg}" alt="Piano" height="183" width="500"/>
+                    </td>
+                    <td class="chessboard">
+                        <a id="event" class="btn btn-success custom-button" th:href="@{/showEvents}">Events</a>
+                    </td>
+                    <td class="chessboard">
+                        <img th:src="@{/images/3.3.jpg}" alt="Mix" height="183" width="500"/>
+                    </td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="chessboard">
+                        <a id="performer" class="btn btn-success custom-button" th:href="@{/showEvents}">Performers</a>
+                    </td>
+                    <td class="chessboard">
+                        <img th:src="@{/images/3.2.jpg}" alt="Rave Party" height="183" width="500"/>                    </td>
+                    <td class="chessboard">
+                        <img th:src="@{/images/1.2.jpg}" alt="Nine Inch Nails" height="183" width="500"/>
+                    </td>
+                </tr>
+                </table>
+            </div>
+    <footer>
+        <h1>
+            Антонио Ресио, търговец на едро, не чистя риба.
+        </h1>
+    </footer>
+
 </body>
 </html>

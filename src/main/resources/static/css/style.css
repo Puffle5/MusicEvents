@@ -1,6 +1,46 @@
+body{
+    background-color: #2a2922;
+}
 #current-title{
     color: white;
 }
 .custom-banner{
-    background-color: rgb(119, 216, 236);
+    background-color: #375E97;
+}
+.main{
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #2a2922;
+}
+table.chessboard {
+    background: #2a2922;
+    width: 97%;
+    margin: 0px auto;
+}
+
+td.chessboard {
+    width: 500px; height: 183px;
+    
+}
+.custom-button{
+    display: block;
+    margin-left: 50%;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+tr.chessboard:nth-child(odd) td.chessboard:nth-child(even),
+tr.chessboard:nth-child(even) td.chessboard:nth-child(odd) {
+    background: white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(254, 58, 79);
+    color: white;
+    text-align: center;
 }
