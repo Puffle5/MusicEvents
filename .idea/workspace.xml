@@ -31,8 +31,8 @@
       <file leaf-file-name="Enemies.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/blog/entities/Enemies.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -98,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/main/java/blog/entities/Performers.java" />
         <option value="$PROJECT_DIR$/src/main/java/blog/entities/Genres.java" />
         <option value="$PROJECT_DIR$/src/main/java/blog/entities/Events.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/blog/repositories/EventRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/blog/controllers/NewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/blog/entities/Enemies.java" />
@@ -110,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/main/java/blog/entities/Performer.java" />
         <option value="$PROJECT_DIR$/src/main/java/blog/entities/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/blog/entities/Reservation.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -350,12 +350,12 @@
       <workItem from="1531145064580" duration="271000" />
       <workItem from="1531145362444" duration="50000" />
       <workItem from="1531145637470" duration="7171000" />
-      <workItem from="1531172499814" duration="29594000" />
+      <workItem from="1531172499814" duration="52399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41605000" />
+    <option name="totallyTimeSpent" value="64410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -631,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/blog/controllers/EventController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
@@ -750,10 +743,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/blog/entities/Enemies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="330">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
     </entry>
