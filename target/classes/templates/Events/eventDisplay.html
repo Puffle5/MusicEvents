@@ -44,7 +44,7 @@
         </thead>
             <tbody>
                 <th:block th:each="event : ${events}">
-                    <tr>
+                    <tr id="table-row">
                         <td th:text="${event.getPerformer().getName()}">asd</td>
                         <td th:text="${event.getDate()}">asd</td>
                         <td th:text="${event.getCity()}">cell2_1</td>
@@ -54,5 +54,19 @@
                 </th:block>
             </tbody>    
         </table>
+        <nav class="col-sm-12">
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-default">Default</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-default">Default</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-default custom-btn">Default</button>
+            </div>
+        </nav>
+        <footer id="custom-footer">
+
+        </footer>
 </body>
 </html>

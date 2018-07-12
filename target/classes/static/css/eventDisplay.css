@@ -1,35 +1,38 @@
 #current-title{
     color: white;
 }
+#make-reservation {
+  background-color: black;
+}
 .custom-banner{
-    background-color: rgb(119, 216, 236);
+    background-color: rgb(88, 88, 88);
 }
 table.redTable {
-    border: 2px solid #000000;
-    background-color: #EDF5F2;
+    border: 2px solid rgb(254, 219, 22);
+    background-color: rgb(88, 88, 88);
     width: 100%;
     text-align: center;
     border-collapse: collapse;
   }
   table.redTable td, table.redTable th {
-    border: 1px solid #AAAAAA;
+    border: 2px solid rgb(254, 219, 22);
     padding: 3px 2px;
   }
   table.redTable tbody td {
     font-size: 22px;
   }
   table.redTable tr:nth-child(even) {
-    background: #A6E06E;
+    background: rgb(53, 53, 53);
   }
   table.redTable thead {
-    background: #37B36C;
+    background: black;
   }
   table.redTable thead th {
     font-size: 24px;
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
-    border-left: 2px solid #000000;
+    border-left: 2px solid rgb(254, 219, 22);
   }
   table.redTable thead th:first-child {
     border-left: none;
@@ -79,4 +82,24 @@ table.redTable {
   }
   .form-wrapper {
     vertical-align: middle;
+  }
+  body {
+    background-image: url("/images/Noir.jpg");
+  }
+  #table-row {
+    color: white;
+  }
+  #custom-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    text-align: center;
+    height: 70px;
+  }
+  .custom-btn {
+    border-style: solid;
+    border-color: red;
   }
