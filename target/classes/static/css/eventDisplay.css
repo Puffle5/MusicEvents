@@ -48,3 +48,21 @@ table.redTable {
     padding: 2px 8px;
     border-radius: 5px;
   }
+  .imgClass { 
+    background-image: url(/images/magnifier.png);
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 53px;
+    border: 0px;
+    background-color: none;
+    cursor: pointer;
+    outline: 0;
+    }
+    .imgClass:hover{ 
+      background-position:  0px -52px;
+    }
+    
+    .imgClass:active{
+      background-position:  0px -104px;
+    }

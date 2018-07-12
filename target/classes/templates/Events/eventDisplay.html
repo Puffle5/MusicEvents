@@ -9,27 +9,26 @@
     <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
     <script type="text/javascript" th:src="@{/js/jquery-3.1.1.js}"></script>
     <script type="text/javascript" th:src="@{/js/npm.js}"></script>
+    <script type="text/javascript" th:src="@{/js/eventDisplay.js}"></script>
 </head>
 <body>
     <header class="panel panel-default custom-banner">
         <div class="panel-body">
-                <form class="form-horizontal" th:action="@{/register}" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <div class="col-sm-4 ">
-                            <input class="form-control" type="email" id="user_email" placeholder="Search Event" name="email" required="required"/>
-                        </div>
-                        
-                        </div>
-                    <div class="form-group">
-                        <div class="col-sm-4 col-sm-offset-4">
-                            
-                            <input value="Submit" type="submit" class="btn btn-primary"/>
-                        </div>
-                    </div>
-                </form>
+            <form id="custom-form" class="form-horizontal" th:action="@{/searchEvents}" method="GET" enctype="multipart/form-data">
+                <div id="search-box" class="form-group col-sm-3">
+                    <input class="form-control col-sm-2" type="text" placeholder="Search Event" name="event" required="required"/>
+                </div>
+                <div id="submit-button-inner" class="col-sm-2">
+                    <img id="my_img" class="image-class" src="/images/magnifier.png" alt="magnifier" height="25" width="25"/>
+                </div>
+            </form>
         </div>
     </header>
-
+    <script type="text/javascript">
+        document.getElementById("my_img").addEventListener("click", function(){
+            document.getElementById("custom-form").submit();
+        });
+    </script>
     <table class="redTable">
         <thead>
             <tr>
@@ -52,15 +51,5 @@
                 </th:block>
             </tbody>    
         </table>
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
