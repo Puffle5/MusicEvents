@@ -87,4 +87,8 @@ public class Event {
     public void setReservations(Set<Reservation> reservations) {
         this.reservations = reservations;
     }
+    @Transient
+    public String getRatio() {
+        return this.getBookedSeats() +"/"+ this.getMaxSeats();
+    }
 }

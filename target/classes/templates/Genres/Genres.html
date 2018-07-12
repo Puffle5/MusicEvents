@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/bootstrap-theme.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/Genres.css}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-3.1.1.js}"></script>
+    <script type="text/javascript" th:src="@{/js/npm.js}"></script>
+</head>
+<body>
+    <header class="panel panel-default custom-banner">
+        <div class="panel-body">
+            <h1 id = "current-title" class = "text-center">Genres</h1>
+        </div>
+    </header>  
+    <div class="main">
+        <div id="left-main-half" class="main-half">
+            <button id="a" type="button" class="btn btn-success">Classical</button>
+            <button id="b" type="button" class="btn btn-success middle-button">Electronic</button>
+            <button id="c" type="button" class="btn btn-success middle-button">Folklore</button>
+            <button id="d" type="button" class="btn btn-success middle-button">Rock</button>
+            <button id="e" type="button" class="btn btn-success">Metal</button>
+        </div>
+        <div id="right-main-half" class="main-half">
+            <div id="top-text" class="text-box">
+                <p class="transparent-box">
+                    Music - vocal or instrumental sounds (or both) combined in such a way as to produce beauty of form, harmony, and expression of emotion.
+                </p>
+            </div>
+            <div id="top-text" class="text-box">
+                <p class="transparent-box">
+                    Music genre - a conventional category that identifies pieces of music as belonging to a shared tradition or set of conventions.
+                </p>
+            </div>
+            <div class="text-box">
+                <p class="transparent-box">
+                    "Without music, life would be a mistake." - Friedrich Nietzsche
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
