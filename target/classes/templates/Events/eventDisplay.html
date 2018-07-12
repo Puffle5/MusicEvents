@@ -13,13 +13,27 @@
 <body>
     <header class="panel panel-default custom-banner">
         <div class="panel-body">
-            <h1 id = "current-title" class = "text-center">Events</h1>
+                <form class="form-horizontal" th:action="@{/register}" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <div class="col-sm-4 ">
+                            <input class="form-control" type="email" id="user_email" placeholder="Search Event" name="email" required="required"/>
+                        </div>
+                        
+                        </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            
+                            <input value="Submit" type="submit" class="btn btn-primary"/>
+                        </div>
+                    </div>
+                </form>
         </div>
     </header>
 
     <table class="redTable">
         <thead>
             <tr>
+                <th>Performer</th>
                 <th>Date</th>
                 <th>City</th>
                 <th>Place</th>
@@ -29,6 +43,7 @@
             <tbody>
                 <th:block th:each="event : ${events}">
                     <tr>
+                        <td th:text="${event.getPerformer().getName()}">asd</td>
                         <td th:text="${event.getDate()}">asd</td>
                         <td th:text="${event.getCity()}">cell2_1</td>
                         <td th:text="${event.getPlace()}">cell3_1</td>
