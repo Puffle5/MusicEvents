@@ -24,7 +24,7 @@
             </form>
         </div>
         <div class="col-sm-5 reservation-wrapper">
-            <a id="make-reservation" class="btn btn-success" th:href="@{/showEvents}">Make a Reservation</a>
+            <a id="make-reservation" class="btn btn-success" th:href="@{/reservationForm}">Make a Reservation</a>
         </div>
     </header>
     <script type="text/javascript">
@@ -54,14 +54,14 @@
                 </th:block>
             </tbody>    
         </table>
-        <nav class="col-sm-12">
-            <div class="col-sm-2">
-                <button type="button" class="btn btn-default">Add Event</button>
+        <nav class="col-sm-12 custom-nav">
+            <div class="col-sm-4 custom-div">
+                <button type="button" class="btn btn-default custom-btn">Add Event</button>
             </div>
-            <div class="col-sm-2">
-                <button type="button" class="btn btn-default">Add Performer</button>
+            <div class="col-sm-4 custom-div">
+                <button type="button" class="btn btn-default custom-btn">Add Performer</button>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-4 custom-div">
                 <button type="button" class="btn btn-default custom-btn">Add Genre</button>
             </div>
         </nav>

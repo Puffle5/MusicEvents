@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/bootstrap-theme.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/reservation-form.css}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-3.1.1.js}"></script>
+    <script type="text/javascript" th:src="@{/js/npm.js}"></script>
+</head>
+<body>
+    <div class="panel-body form-wrapper col-sm-6">
+        <form id="custom-form" class="form-horizontal" th:action="@{/reservationRegister}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Name</label>
+                <div class="col-sm-4 ">
+                    <input class="form-control" type="text" name="userName" required="required"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Email</label>
+                <div class="col-sm-4 ">
+                    <input class="form-control" type="email" name="email" required="required"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Phone</label>
+                <div class="col-sm-4 ">
+                    <input class="form-control" type="tel" name="phone" required="required"/>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Event</label>
+                <div class="col-sm-4 ">
+
+
+
+                    <select  class="form-control" name="eventId">
+                        
+                        <option th:each="event : ${events}"
+                            th:value="${event.getId()}"
+                            th:text="${event.getDate()}+' : '+${event.getPerformer().getName()}+' : '+${event.getPlace()}">
+                        </option>
+                    </select>
+
+
+
+
+
+                </div>
+            </div>
+
+
+            
+
+
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Ticket count</label>
+                <div class="col-sm-4 ">
+                    <input class="form-control" type="number" name="ticketCount" required="required"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-4 col-sm-offset-7">
+                    <input value="Submit" type="submit" class="btn btn-primary"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
