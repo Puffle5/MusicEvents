@@ -66,3 +66,17 @@ table.redTable {
     .imgClass:active{
       background-position:  0px -104px;
     }
+    .reservation-wrapper {
+    margin-top: 10px;
+    vertical-align: middle;
+    }
+  #make-reservation {
+    align-self: center;
+    font-size: 30px;
+  }
+  .form-wrapper {
+  vertical-align: middle;
+  }
+  .form-wrapper {
+    vertical-align: middle;
+  }
