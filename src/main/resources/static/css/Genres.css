@@ -1,0 +1,61 @@
+#current-title{
+    color: white;
+}
+.custom-banner{
+    background-color: #375E97;
+}
+body {
+    background-color: rgb(10, 37, 71);
+}
+.main-half {
+    
+    display: inline-block;
+    width: 35%;
+    
+}
+#right-main-half {
+    margin-left: 17px;
+    width: 775px;
+    height: 617px;
+    background: url("/images/Trumpet.png")
+}
+#left-main-half {
+    margin-left: 20px;
+    width: 700px;
+    
+}
+.btn {
+    display: block;
+    font-size: 66px;
+    width: 100%;
+
+}
+.middle-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-box {
+    
+    font-size: 30px;
+}
+#top-text {
+    margin-bottom: 130px;
+ }
+ #a {
+     background: url("/images/Classical.jpg")
+ }
+ #b {
+    background: url("/images/Electronic.jpg")
+}
+#c {
+    background: url("/images/Folklore.jpg")
+}
+#d {
+    background: url("/images/Rock.jpg")
+}
+#e {
+    background: url("/images/Metal.jpg")
+}
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.5)
+}

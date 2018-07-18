@@ -17,10 +17,10 @@
         </div>
     </header>       
     <!-- Page content -->
-   
+
+
 
     
-
     <div class="main">
         <table class="chessboard">
                 <tr class="chessboard">
@@ -31,7 +31,7 @@
                         <img th:src="@{/images/2.1.jpg}" alt="Rock Concert" height="183" width="500"/>
                     </td>
                     <td class="chessboard">
-                        <a id="genre" class="btn btn-success custom-button" th:href="@{/showEvents}">Genres</a>
+                        <a id="genre" class="btn btn-success custom-button" th:href="@{/musicGenres}">Genres</a>
                     </td>
                 </tr>
                 <tr class="chessboard">
@@ -58,9 +58,11 @@
                 </table>
             </div>
     <footer>
-        <h1>
-            Антонио Ресио, търговец на едро, не чистя риба.
-        </h1>
+
+            <h1>
+                <a id="Antonio" th:href="@{/antonioFace}">Programming in a nutshell</a>
+            </h1>
+        
     </footer>
 
 </body>

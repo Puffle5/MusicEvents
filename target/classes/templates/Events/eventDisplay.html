@@ -9,17 +9,33 @@
     <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
     <script type="text/javascript" th:src="@{/js/jquery-3.1.1.js}"></script>
     <script type="text/javascript" th:src="@{/js/npm.js}"></script>
+    <script type="text/javascript" th:src="@{/js/eventDisplay.js}"></script>
 </head>
 <body>
-    <header class="panel panel-default custom-banner">
-        <div class="panel-body">
-            <h1 id = "current-title" class = "text-center">Events</h1>
+    <header class="panel panel-default custom-banner col-sm-12">
+        <div class="panel-body form-wrapper col-sm-6">
+            <form id="custom-form" class="form-horizontal" th:action="@{/searchEvents}" method="GET" enctype="multipart/form-data">
+                <div id="search-box" class="form-group col-sm-6">
+                    <input class="form-control col-sm-2" type="text" placeholder="Search Event" name="event" required="required"/>
+                </div>
+                <div id="submit-button-inner" class="col-sm-2">
+                    <img id="my_img" class="image-class" src="/images/magnifier.png" alt="magnifier" height="25" width="25"/>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-5 reservation-wrapper">
+            <a id="make-reservation" class="btn btn-success" th:href="@{/reservationForm}">Make a Reservation</a>
         </div>
     </header>
-
+    <script type="text/javascript">
+        document.getElementById("my_img").addEventListener("click", function(){
+            document.getElementById("custom-form").submit();
+        });
+    </script>
     <table class="redTable">
         <thead>
             <tr>
+                <th>Performer</th>
                 <th>Date</th>
                 <th>City</th>
                 <th>Place</th>
@@ -28,24 +44,29 @@
         </thead>
             <tbody>
                 <th:block th:each="event : ${events}">
-                    <tr>
+                    <tr id="table-row">
+                        <td th:text="${event.getPerformer().getName()}">asd</td>
                         <td th:text="${event.getDate()}">asd</td>
                         <td th:text="${event.getCity()}">cell2_1</td>
                         <td th:text="${event.getPlace()}">cell3_1</td>
-                        <td th:text="${event.getMaxSeats()}">cell4_1</td>
+                        <td th:text="${event.getRatio()}">cell4_1</td>
                     </tr>
                 </th:block>
             </tbody>    
         </table>
+        <nav class="col-sm-12 custom-nav">
+            <div class="col-sm-4 custom-div">
+                <button type="button" class="btn btn-default custom-btn">Add Event</button>
+            </div>
+            <div class="col-sm-4 custom-div">
+                <button type="button" class="btn btn-default custom-btn">Add Performer</button>
+            </div>
+            <div class="col-sm-4 custom-div">
+                <button type="button" class="btn btn-default custom-btn">Add Genre</button>
+            </div>
+        </nav>
+        <footer id="custom-footer">
 
-
-
-
-
-
-
-
-
-
+        </footer>
 </body>
 </html>
